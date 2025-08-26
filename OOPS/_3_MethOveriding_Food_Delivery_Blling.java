@@ -50,6 +50,24 @@ class StreetFood extends Restaurant {
 }
 
 
+class Cafe extends Restaurant 
+{
+    @Override
+    public double calculateBill(double basePrice) 
+    {
+        /*
+          Example:
+          If you order coffee worth ₹500:
+          Bill = 500
+
+          GST = 12%
+          GST amount = 500 × 0.12 = 60
+          Final Bill = 500 + 60 = 560
+        */
+        return basePrice + basePrice * 0.12;  
+    }
+}
+
 public class _3_MethOveriding_Food_Delivery_Blling
 {
     public static void main(String[] args) 
@@ -58,6 +76,7 @@ public class _3_MethOveriding_Food_Delivery_Blling
         Restaurant r2 = new FastFood();
         Restaurant r3 = new FineDining();
         Restaurant r4 = new StreetFood();
+        Restaurant r5 = new Cafe();
 
         double price = 500;
 
@@ -65,6 +84,7 @@ public class _3_MethOveriding_Food_Delivery_Blling
         System.out.println("FastFood: " + r2.calculateBill(price));
         System.out.println("FineDining: " + r3.calculateBill(price));
         System.out.println("StreetFood: " + r4.calculateBill(price));
+        System.out.println("Cafe: " + r5.calculateBill(price));
         
     }
        
