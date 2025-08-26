@@ -29,6 +29,17 @@ class Bike extends vehicle
     }
 }
 
+//child class -3 
+class Truck extends vehicle
+{
+    public void move()
+    {
+        System.out.println("This is Truck...!!!");
+    }
+}
+
+
+
 
 public class _2_MethodOveriding 
 {
@@ -38,10 +49,12 @@ public class _2_MethodOveriding
         vehicle v1 = new vehicle();
         vehicle v2 = new Car();
         vehicle v3 = new Bike();
+        vehicle v4 = new Truck();
 
         v1.move(); 
         v2.move(); 
-        v3.move(); 
+        v3.move();
+        v4.move(); 
     }
     
 
