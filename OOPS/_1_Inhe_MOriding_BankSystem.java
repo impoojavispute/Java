@@ -112,7 +112,7 @@ class CurrentAccount  extends BankAccount
     {
         if (amount > 0 && amount <= balance) 
         {
-                    balance -= amount;
+                    balance -= amount;                                                                //did not understand the logic for Salary Account 
                     System.out.println("Withdrawn: " + amount);
         } 
         else 
@@ -140,7 +140,7 @@ public class _1_Inhe_MOriding_BankSystem
     sa.deposit(2000);
     ca.deposit(1000);
 
-    // Withdraw
+    // Withdraw 
     sa.withdraw(6000); // should warn about min balance
     ca.withdraw(3500); // should allow overdraft
 
