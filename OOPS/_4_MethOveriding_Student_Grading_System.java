@@ -4,6 +4,10 @@ package OOPS;
 class Student 
 {
    //methos returns in string thats why datatyepe is string 
+   //Use void → if you just want to do an action (like printing).
+   //Use a return type (String, int, etc.) → if you want the method to give back some result.
+
+   
    public String  getGrade(int marks)
    {
      //For Normal Students 

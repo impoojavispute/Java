@@ -1,35 +1,31 @@
-import java.util.Scanner;
-
-public class practise 
-{
-    public static void main(String[] args) 
-    {
-        Scanner sc = new Scanner(System.in);
 
 
-        System.out.println("Enter Rows: ");
-        int row = sc.nextInt();
-
-        System.out.println("Enter Column :");
-        int col = sc.nextInt();
-
-        int array[][] = new int[row][col];
-
-        System.out.println("Enter Elements: ");
-        for (int i =0 ; i<=row ; i++)
-        {
-            for (int j= 0; j<=col ; j++)
-            {
-                array[i][j] = sc.nextInt();
-            }
-        }
-
-        //sum of each row
-        
-
-       
-
-        sc.close();
-    }
-
+// Example of Overriding in Java
+class Animal {
+    // Base class
+    void move() { System.out.println(
+      "Animal is moving."); }
+    void eat() { System.out.println(
+      "Animal is eating."); }
 }
+
+class Dog extends Animal {
+    @Override void move()
+    { // move method from Base class is overriden in this
+      // method
+        System.out.println("Dog is running.");
+    }
+    void bark() { System.out.println("Dog is barking."); }
+}
+
+public class practise {
+    public static void main(String[] args)
+    {
+        Dog d = new Dog();
+        d.move(); // Output: Dog is running.
+        d.eat(); // Output: Animal is eating.
+        d.bark(); // Output: Dog is barking.
+    }
+}
+
+
