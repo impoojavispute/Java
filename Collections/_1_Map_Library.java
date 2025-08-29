@@ -36,11 +36,11 @@ public class _1_Map_Library
                 case 1: 
                     System.out.println("  ");
                     //System.out.println("Add Book. ");
-                    System.out.println("Enter Book Name. ");
+                    System.out.print("Enter Book Name: ");
                     String bookname = sc.nextLine();
 
 
-                    System.out.println("Enter Book Price. ");
+                    System.out.print("Enter Book Price: ");
                     Double price = sc.nextDouble();
                     sc.nextLine();
 
